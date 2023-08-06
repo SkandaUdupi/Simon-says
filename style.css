@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+}
+#start {
+  display: none;
+}
+#container {
+  display: grid;
+  height: 400px;
+  width: 400px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 6px;
+  column-gap: 6px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.green {
+  background-color: #63aac0;
+}
+.red {
+  background-color: #d95980;
+}
+.yellow {
+  background-color: #f99b45;
+}
+.blue {
+  background-color: #819ff9;
+}
+.colors {
+  height: 200px;
+  width: 200px;
+}
+.flash {
+  background-color: white;
+}
+.gameOver {
+  color: red;
+}
+p {
+  margin-top: 30px;
+}
+#mobInfo {
+  display: none;
+}
+@media (max-width: 440px) {
+  #info {
+    display: none;
+  }
+  #start {
+    display: inline;
+    color: #d95980;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+  }
+  #container {
+    display: grid;
+    height: 320px;
+    width: 320px;
+    column-gap: 3px;
+    row-gap: 3px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .colors {
+    height: 160px;
+    width: 160px;
+  }
+  #mobInfo {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
