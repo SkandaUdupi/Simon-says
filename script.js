@@ -57,7 +57,7 @@ const flash = (btn) => {
   }, 250);
 };
 const btnRandomizer = () => {
-  let index = Math.floor(Math.random() * 3);
+  let index = Math.floor(Math.random() * 4);
   let color = btns[index];
   gameSeq.push(color);
   let btn = document.querySelector(`.${color}`);
