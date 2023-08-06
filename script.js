@@ -46,6 +46,7 @@ document.addEventListener("keypress", () => {
 
 startBtn.addEventListener("click", () => {
   if (start == false) {
+    gameOver.innerHTML = "";
     levelUp();
   }
 });
